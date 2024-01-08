@@ -1,0 +1,52 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import { capitalize } from "../utils";
+
+
+const allBlogArticles: CollectionEntry<'blog'>[] = await getCollection('blog');
+
+const tags: string[] = allBlogArticles.flatMap((article: any) => article.data.tags);
+
+const uniqueTags: string[] = [...new Set(tags)];
+---
+
+<footer class="bg-blue-900 text-white">
+  <div class="container mx-auto mt-10 max-w-screen-xl px-8">
+    <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="mt-10">
+        <h3 class="text-xl font-semibold mb-4">About</h3>
+        <p class="text-white text-sm">
+          Railway Gallery is a website built for train and railway enthusiasts to publish their own images and stories from DMU's to steam!.
+        </p>
+      </div>
+      <div class="mt-10">
+        <h3 class="text-xl font-semibold mb-4">Categories</h3>
+        <ul class="text-white text-sm">
+          {uniqueTags.map(tag => (
+            <li class="mb-2">
+              <a href={'/gallery/tag/' + tag}>#{capitalize(tag)}</a>  
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="mt-10">
+        <h3 class="text-xl font-semibold mb-4">Contact</h3>
+        <ul class="text-white text-sm">
+          <li class="mb-2 font-bold">
+            <a href="mailto:daviesg77@gmail.com">Email</a>
+          </li>
+          <li class="mb-2">
+            <a href="#">Twitter</a>
+          </li>
+          <li class="mb-2">
+            <a href="#">Facebook</a>
+          </li>
+          <li class="mb-2">
+            <a href="#">Instagram</a>
+          </li>
+        </ul>
+        <script>
+          AOS.init();
+        </script>
+</footer>
