@@ -3,7 +3,6 @@ import MainLayout from "../../layouts/MainLayout.astro";
 import Tags from "../../components/Tags.astro";
 import { getEntry } from 'astro:content';
 import { formatDate } from "../../utils";
-import Comments from "../../components/comments.astro";
 const { slug } = Astro.params;
 
 if(slug === undefined) {
