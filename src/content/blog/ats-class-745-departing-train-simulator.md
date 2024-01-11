@@ -5,7 +5,7 @@ author: 'Safak Aktaş'
 image: 'Class-745-TS.jpg'
 tags: ['EMU', 'Train-Simulator-Classic', 'Class 745']
 slug: Class-745-Awaiting-depature-Train-Simulator-Classic
-unit: Class 745
+unit: Class 745008
 ---
 
 ATS Class 745 008 'FLIRT', waiting for departure. October 10, 2023 
