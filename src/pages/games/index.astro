@@ -1,0 +1,102 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+
+import { getCollection } from "astro:content";
+import type { CollectionEntry, CollectionKey } from "astro:content";
+
+---
+<MainLayout>
+
+
+    
+
+<section class="bg-center bg-blue-700">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Video Games</h1>
+        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Aside from real life railway pictures, we also enjoy railway simulation pictures!. </p>
+     
+    </div>
+</section>
+
+<div class="flex flex-wrap justify-center mt-10">
+
+    <!-- card 1 -->
+    <div class="p-4 max-w-sm">
+        <div class="flex rounded-lg h-full dark:bg-gray-800 bg-gray-800 p-8 flex-col">
+            <div class="flex items-center mb-3">
+                <div
+                    class="w-8 h-8 mr-4 ml-1 inline-flex items-center">
+                    <img class="pr-2" src="https://s3-eu-central-1.amazonaws.com/euc-cdn.freshdesk.com/data/helpdesk/attachments/production/80129182399/original/jUmWHwyRZ-qQTUUiCavOCEjMPj7B_LICMA.png?1660034174" >
+                      
+                </div>
+                <h2 class="text-white dark:text-white text-lg font-medium">Train Sim World.</h2>
+            </div>
+            <div class="flex flex-col justify-between flex-grow">
+                <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                    Dovetail Game's ever popular Train Sim World 4 features heavily on our website. Powered by the Unreal Engine 4, TSW certainly looks the part.
+                </p>
+                <a href="/gallery/tag/TSW" class="mt-3 bg-blue-300 text-white dark:text-white hover:text-blue-600 inline-flex items-center">View TSW screenshots.
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- card 2 -->
+    <div class="p-4 max-w-sm">
+        <div class="flex rounded-lg h-full dark:bg-gray-800 bg-gray-800 p-8 flex-col">
+            <div class="flex items-center mb-3">
+                <div
+                    class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full ">
+                    <img class="pr-2" src="data:image/jpeg;base64,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" >
+                </div>
+                <h2 class="text-white dark:text-white text-lg font-medium">Train Simulator Classic</h2>
+            </div>
+            <div class="flex flex-col justify-between flex-grow">
+                <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                   Train Simulator Classic is one of the oldest and most iconic railway simulations released. View our screenshots of ingame content.
+                </p>
+                <a href="/gallery/tag/Train-Simulator-Classic" class="mt-3 text-white dark:text-white hover:text-blue-600 inline-flex items-center">View TSC Screenshots.
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- card 3 -->
+    <div class="p-4 max-w-sm">
+        <div class="flex rounded-lg h-full dark:bg-gray-800 bg-gray-800 p-8 flex-col">
+            <div class="flex items-center mb-3">
+                <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full ">
+                <img class="pr-2" src="https://www.allkeyshop.com/blog/wp-content/uploads/SimRailTheRailwaySimulator.jpg" >
+            </div>
+                <h2 class="text-white dark:text-white text-lg font-medium">SimRail </h2>
+            </div>
+            <div class="flex flex-col justify-between flex-grow">
+                <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                    One of the newest simulation games out on the market is SimRail EU, or just SimRail.  Developed by a team of railway fans from Poland it's a fantastic simulation.
+
+                </p>
+                <a href="/gallery/tag/SimRail" class="mt-3 text-white dark:text-white hover:text-blue-600 inline-flex items-center">See SimRail's page.
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+  
+
+</div>
+
+
+</MainLayout>

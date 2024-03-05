@@ -12,19 +12,19 @@ import SearchForm from "./SearchForm.astro";
   </svg>
 </button>
 <img src="{logo)" />
-<aside id="cta-button-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-  <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+<aside id="cta-button-sidebar" class="fixed top-0 left-0 z-40 w-64  h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+  <div class="h-full px-3 py-4 overflow-y-auto bg-[#EEEEEE] dark:bg-gray-800">
      <ul class="space-y-2 font-medium">
         <li>
            <a href="/" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-6 h-6 text-white-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
              </svg>
               <span class="ms-3">Homepage</span>
            </a>
         </li>
         <li>
-           <a href="/gallery" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+           <a href="/gallery" class="flex items-center p-2 text-white-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
             <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                <path d="M19 5h-1.382l-.171-.342A2.985 2.985 0 0 0 14.764 3H9.236a2.984 2.984 0 0 0-2.683 1.658L6.382 5H5a3 3 0 0 0-3 3v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a3 3 0 0 0-3-3Zm-3.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"/>
              </svg>
@@ -87,6 +87,10 @@ import SearchForm from "./SearchForm.astro";
                <li>
 
                   <a href="/gallery/tag/Turkey" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">                  <img class="pr-2" src="https://hatscripts.github.io/circle-flags/flags/tr.svg" width="25"> Turkey</a>
+               </li>
+               <li>
+
+                  <a href="/gallery/tag/Austria" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">                  <img class="pr-2" src="https://hatscripts.github.io/circle-flags/flags/at.svg" width="25"> Austria</a>
                </li>
          </ul>
       </li>
@@ -157,7 +161,6 @@ import SearchForm from "./SearchForm.astro";
               </svg>
            </button>
         </div>
-         
         
         <p class="mb-3 text-sm text-blue-800 dark:text-blue-400">
             Welcome to the first beta of our brand new website!. Any feedback is most welcome!.
@@ -170,8 +173,6 @@ import SearchForm from "./SearchForm.astro";
   </div>
 
 </aside>
-<div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 text-center" role="alert">
-  <span class="font-medium">Welcome!</span> Welcome to our brand new website!. Follow us on Social Media for more information.
-</div>
+
 
 </div>

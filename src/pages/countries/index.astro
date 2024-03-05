@@ -1,0 +1,148 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+
+import { getCollection } from "astro:content";
+import type { CollectionEntry, CollectionKey } from "astro:content";
+
+---
+<MainLayout>
+
+
+    
+
+<section class="bg-center  bg-[url('https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-gray-700 bg-blend-multiply">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Countries</h1>
+        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">UK Railway Gallery is not just about the UK but about the world!.. Check out railway's from different countries today!.</p>
+     
+    </div>
+</section>
+
+<div class="flex flex-wrap justify-center mt-10">
+
+    <!-- card 1 -->
+    <div class="p-4 max-w-sm">
+        <div class="flex rounded-lg h-full dark:bg-gray-800 bg-gray-800 p-8 flex-col">
+            <div class="flex items-center mb-3">
+                <div
+                    class="w-8 h-8 mr-4 ml-1 inline-flex items-center">
+                    <img class="pr-2" src="https://hatscripts.github.io/circle-flags/flags/gb.svg" >
+                      
+                </div>
+                <h2 class="text-white dark:text-white text-lg font-medium">United Kingdom</h2>
+            </div>
+            <div class="flex flex-col justify-between flex-grow">
+                <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                    From the highlands of Scotland to the hustle and bustle of the London Underground, check out our pictures from across the UK today.
+                </p>
+                <a href="/gallery/tag/England" class="mt-3 text-white dark:text-white hover:text-blue-600 inline-flex items-center">View United Kingdom's pictures
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- card 2 -->
+    <div class="p-4 max-w-sm">
+        <div class="flex rounded-lg h-full dark:bg-gray-800 bg-gray-800 p-8 flex-col">
+            <div class="flex items-center mb-3">
+                <div
+                    class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full ">
+                    <img class="pr-2" src="https://hatscripts.github.io/circle-flags/flags/nl.svg" >
+                </div>
+                <h2 class="text-white dark:text-white text-lg font-medium">Netherlands</h2>
+            </div>
+            <div class="flex flex-col justify-between flex-grow">
+                <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                    View our pictures from the Netherlands. From iconic trains such as the Koploper train to Germany's ICE3 we are sure you will like our collection of Dutch pictures.
+                </p>
+                <a href="#" class="mt-3 text-white dark:text-white hover:text-blue-600 inline-flex items-center">View Dutch Railway's
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- card 3 -->
+    <div class="p-4 max-w-sm">
+        <div class="flex rounded-lg h-full dark:bg-gray-800 bg-gray-800 p-8 flex-col">
+            <div class="flex items-center mb-3">
+                <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full ">
+                <img class="pr-2" src="https://hatscripts.github.io/circle-flags/flags/be.svg" >
+            </div>
+                <h2 class="text-white dark:text-white text-lg font-medium">Belguim</h2>
+            </div>
+            <div class="flex flex-col justify-between flex-grow">
+                <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                    Pictures from the low country of Belgium. Eurostar, ICE and regional services all reside here!.
+
+                </p>
+                <a href="/gallery/tag/Belgium" class="mt-3 text-white dark:text-white hover:text-blue-600 inline-flex items-center">View Flemish Railway's
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-4 max-w-sm">
+        <div class="flex rounded-lg h-full dark:bg-gray-800 bg-gray-800 p-8 flex-col">
+            <div class="flex items-center mb-3">
+                <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full ">
+                <img class="pr-2" src="https://hatscripts.github.io/circle-flags/flags/tr.svg" >
+            </div>
+                <h2 class="text-white dark:text-white text-lg font-medium">Turkey</h2>
+            </div>
+            <div class="flex flex-col justify-between flex-grow">
+                <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                    Turkey, what can we say? A wonderful country with plenty going on from freight to the Yüksek Hızlı Tren line!. 
+
+                </p>
+                <a href="/gallery/tag/Turkey" class="mt-3 text-white dark:text-white hover:text-blue-600 inline-flex items-center">Enjoy what Turkey has to offer!
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-4 max-w-sm">
+        <div class="flex rounded-lg h-full dark:bg-gray-800 bg-gray-800 p-8 flex-col">
+            <div class="flex items-center mb-3">
+                <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full ">
+                <img class="pr-2" src="https://hatscripts.github.io/circle-flags/flags/at.svg" >
+            </div>
+                <h2 class="text-white dark:text-white text-lg font-medium">Austria </h2>
+            </div>
+            <div class="flex flex-col justify-between flex-grow">
+                <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                  Check out our newest country, Austria. Featuring many great pictures from the Railjet to the S-BAHN VORARLBERG line.
+
+                </p>
+                <a href="/gallery/tag/Austria" class="mt-3 text-white dark:text-white hover:text-blue-600 inline-flex items-center">Explore Austria.
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</MainLayout>

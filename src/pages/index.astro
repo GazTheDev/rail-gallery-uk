@@ -4,7 +4,7 @@ import SearchForm from "../components/SearchForm.astro";
 import ArticleCard from "../components/ArticleCard.astro";
 import MostRecentArticle from "../components/MostRecentArticle.astro";
 import { HOMEPAGE_ARTICLE_LIMIT } from "../constants";
-
+import Country from "../components/country.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry, CollectionKey } from "astro:content";
 
@@ -15,16 +15,15 @@ const mostRecentArticle: CollectionEntry<'blog'> = allBlogArticles[0];
 
 const otherArticles: CollectionEntry<'blog'>[] = allBlogArticles.slice(1);
 ---
+
 <MainLayout>
-  <style>
-    h1 {
-      font-family: 'Lemon', serif;
-    }
-</style>
+ 
   <!-- Top Grid -->
+  
+  
   <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
     <div>
-      <h1  class="text-5xl font-bold mt-4 mb-8 leading-tight xl:text-6xl text-center text-blue-800 font-system font-Lemon, serif;
+      <h1  class="text-5xl font-bold mt-4 mb-8 leading-tight xl:text-6xl text-center  font-system font-Lemon, serif;
       ">
         Rail Gallery UK 
       </h1>
@@ -41,12 +40,14 @@ const otherArticles: CollectionEntry<'blog'>[] = allBlogArticles.slice(1);
     <MostRecentArticle article={mostRecentArticle} />
   </div>
 
+  <Country />
+
 <div class="w-auto pt-3">
   <div class="p-4 mb-4 text-sm text-white rounded-lg bg-blue-900 dark:bg-gray-800 dark:text-blue-400" role="alert">
    <span class=" text-center font-medium">Information!</span> Please submit pictures  <a class="font-bold"href="/submit">here</a>
   </div>
 </div>
-<h1 class=" text-xl text-center underline">Most Recent Pictures</h1>
+<h1 class=" text-xl text-center ">Most Recent Pictures</h1>
   <!-- Main Grid -->
   <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
     
